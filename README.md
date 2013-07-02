@@ -5,8 +5,10 @@ The majority of examples on the internet of using SSL with PostgreSQL instruct t
 
 The example code includes a [TrustManager] and [SSLSocketFactory] that can validate against a pre-shared certificate. It provides protection against MITM. Additionaly, through certificate pinning a self-signed certificate can be even more secure than one signed by a trusted [certificate authority][CA] as it will also be immune to CA compromises.
 
+For other examples of properly establishing SSL connections check out http://properssl.org/.
+
 ### Vagrant
-The tests are configured to run against the local machine. For convience a Vagrantfile is included to automatically provision a PostgreSQL server with a test user and database. To create it run:
+The tests are configured to run against the local machine. For convenience a Vagrantfile is included to automatically provision a PostgreSQL server with a test user and database. To create it run:
 
     $ vagrant up
 
